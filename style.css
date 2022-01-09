@@ -1,0 +1,206 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&display=swap');
+
+/* Variables */
+:root {
+    --clr-primary:#298a85;
+    --clr-primary-light:#5f9c99;
+    --clr-secondary:#2cb04f;
+    --clr-grey-1:#5b5e5d;
+    --clr-grey-5:#787d7b;
+    --clr-grey-10:#b8bab9;
+    --clr-white:#f5f5f5;
+    --ff-primary:EB-Garamond;
+    --transition: all 0.3s linear;
+    --spacing:0.25rem;
+    --radius: 0.3rem;
+}
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background:var(--clr-white);
+    font-family:var(--ff-primary);
+}
+/* Global Styles */
+.small-divider {
+    height: 0.5rem;
+    width:10%;
+    background: linear-gradient(var(--clr-primary), var(--clr-secondary), var(--clr-primary));
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.clearfix::after, .clearfix::before {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+header {
+    padding: /*20px 35px;*/0px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+  }
+  
+  header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: var(--clr-primary);
+  }
+
+ header nav {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  
+  header a {
+    text-decoration: none;
+    color: var(--clr-primary);
+  }
+  
+  header nav {
+    margin: 7px 0;
+  }
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  header nav ul li a:hover {
+    background: var(--clr-white);
+    color: var(--clr-primary-light);
+    border-radius: 15px;
+    text-shadow: none;
+  }
+
+  .picture {
+      height: 7rem;
+      width: 100%;
+      background:url("pexels-scott-webb-1029624.jpg") center/cover no-repeat fixed;
+  }
+
+  .picture h1 {
+      text-align: right;
+      transform: translate(-50% 0);
+      text-transform: uppercase;
+      font-family: var(--ff-primary);
+      font-size:2rem;
+  }
+
+  /* Content Divider */
+  .content-divider {
+    height: 0.5rem;
+    background: linear-gradient(to left, var(--clr-primary), var(--clr-secondary), var(--clr-primary));
+  }
+
+  /* About Me Section */
+  .section1 h1{
+      color:var(--clr-primary);
+  }
+
+
+  .section1 {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 7rem;
+    /*height: 25rem;*/
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Grid-1 Grid-2 Grid-2"
+  }
+  
+  .Grid-1 { grid-area: Grid-1; }
+  
+  .Grid-2 { grid-area: Grid-2; }
+  
+
+  /* Projects Section */
+  .container {  
+    display: grid;
+    height:25rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5fr 5fr 5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Area-1 Area-2 Area-2"
+      "Area-1 Area-3 Area-4"
+      "Area-1 Area-5 Area-6";
+  }
+  
+  .Area-1 { grid-area: Area-1; }
+  
+  .Area-2 { grid-area: Area-2; }
+  
+  .Area-3 { grid-area: Area-3; }
+  
+  .Area-4 { grid-area: Area-4; }
+  
+  .Area-5 { grid-area: Area-5; }
+  
+  .Area-6 { grid-area: Area-6; }
+
+  .Area-2,.Area-3,.Area-4,.Area-5,.Area-6 {
+      background: url(./coding-1556754232.jpg);
+      text-align:center;
+      border: 5px black;
+  }
+  
+  .Area-1 {
+      text-align:center;
+      /* In middle of projects, re-align */
+  }
+
+  /* Contact Me Section */
+  footer nav {
+    margin: 7px 0;
+  }
+
+  footer nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  footer nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  footer nav ul li a:hover {
+    background: var(--clr-white);
+    color: var(--clr-primary-light);
+    border-radius: 15px;
+    text-shadow: none;
+  }
+
